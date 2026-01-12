@@ -10,16 +10,9 @@ const initialVotes: Votes = {
   bad: 0,
 };
 
-export default function App() {
-  const [votes, setVotes] = useState<Votes>(initialVotes);
-
-  const handleVote = (type: VoteType) => {
-    setVotes((prev) => ({ ...prev, [type]: prev[type] + 1 }));
-  };
-}
 
 
-const App = () => {
+ function App() {
   const [votes, setVotes] = useState<Votes>(initialVotes);
 
   const handleVote = (voteType: VoteType) => {
