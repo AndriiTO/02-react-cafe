@@ -1,5 +1,6 @@
+import type { VoteType } from "../../types/votes";
 import css from "./VoteOptions.module.css";
-import type { VoteType , Votes} from "../Types/Votes";
+
 
 interface VoteOptionsProps {
   onVote: (type: VoteType) => void;
